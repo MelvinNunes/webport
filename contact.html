@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Mausse - Contactar</title>
+    <link rel="stylesheet" href="dist/tailwind.min.css">
+    <link rel="stylesheet" href="css/style_contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="animation/aos.css">
+    <script src="animation/aos.js"></script>
+</head>
+<body>
+<!--Animation Starter-->
+<script>
+  AOS.init();
+</script>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg shadow-md py-6 lg:py-10 bg-white relative flex items-center w-full justify-between">
+  <div class="px-6 w-full flex flex-wrap items-center justify-between">
+      <div class="lg:pl-16">
+          <a href="index.html" ><img src="img/logo.png" alt="logo" class="w-18 h-8 lg:w-24 lg:h-8"></a>
+      </div>
+      <div class="flex items-center ml-72 md:hidden">
+        <button class="outline-none mobile-menu-button">
+          <svg class="w-6 h-6 text-gray-500" x-show="! showMenu" fill="none" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="2" viewBox="0 00 24 24" stroke="currentColor">
+              <path d="m4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+      </button>
+    </div>
+    <div class="items-center">
+      <ul class="navbar-nav mr-auto md:flex md:flex-row hidden">
+        <li class="nav-item">
+          <a href="index.html" class="p-3 uppercase font-bold hover:text-blue-700 active:text-blue-600 focus:text-blue-600 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light">Home<i class="fa-solid fa-house-chimney pl-1"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="portofolio.html" class="p-3 uppercase font-bold hover:text-blue-700 active:text-blue-600 focus:text-blue-600 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light">Portófolio<i class="fa-solid fa-book-open pl-1"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="p-3 uppercase font-bold hover:text-blue-700 active:text-blue-600 focus:text-blue-600 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light">Contacto<i class="fa-solid fa-phone pl-1"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>    
+</nav>
+
+<!--Menu Responsivo-->
+<div class="hidden mobile-menu shadow-lg">
+<ul class="pt-5 pb-5">
+  <li class="p-2 mx-5 my-3">
+    <a href="index.html" class=" uppercase font-bold hover:text-blue-900 text-blue-600 focus:text-blue-600 transition duration-300 ease-in-out">Home</a>
+  </li>
+  <li class="p-2 mx-5 my-3">
+    <a href="portofolio.html" class="  uppercase font-bold hover:text-blue-900 text-blue-600 focus:text-blue-600 transition duration-300 ease-in-out">Portófolio</a>
+  </li>
+  <li class="p-2 mx-5 my-3">
+    <a href="contact.html" class="  uppercase font-bold hover:text-blue-900 text-blue-600 focus:text-blue-600 transition duration-300 ease-in-out" >Contacto</a>
+  </li>
+</ul>
+</div>
+
+<script>
+const btn = document.querySelector("button.mobile-menu-button");
+const menu = document.querySelector(".mobile-menu");
+
+  btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+  });
+</script>
+
+<div class="text-center mt-20" >
+  <img data-aos="zoom-in" src="img/miguel.png" class="rounded-full w-44 h-44 mb-4 mx-auto shadow-lg" alt="Avatar"/>
+  <h5 data-aos="fade-up" class="text-xl font-medium leading-tight mb-2">Miguel Mausse</h5>
+  <p data-aos="fade-up" class="text-gray-500">Fotográfo</p>
+</div>
+
+<!--Divs de Contactos-->
+<div class="flex justify-center mt-20" data-aos="zoom-in" data-aos-duration="500">
+  <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg mx-16 border-2 border-transparent hover:border-green-500 transition duration-200">
+    <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="img/imessage+message+messages-1320085878215137850.png" alt="" />
+    <div class="p-6 flex flex-col justify-start">
+      <h5 class="text-gray-900 text-xl font-medium mb-2">Contacto Pessoal: 84000000</h5>
+      <p class="text-gray-600 text-xs">Contacto alternativo: 84000000</p>
+    </div>
+  </div>
+</div>
+
+<div class="flex justify-center mt-20" data-aos="zoom-in" data-aos-duration="600">
+  <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg mx-16 border-2 border-transparent hover:border-green-500 transition duration-200">
+    <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="img/WhatsApp..png" alt="" />
+    <div class="p-6 flex flex-col justify-start">
+      <h5 class="text-gray-900 text-xl font-medium mb-2">Contactar por: Whatsapp</h5>
+      <p class="text-gray-600 text-xs">Link directo para o chat</p>
+    </div>
+  </div>
+</div>
+
+<div class="flex justify-center mt-20" data-aos="zoom-in" data-aos-duration="500">
+  <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg mx-16 border-2 border-transparent hover:border-red-600 transition duration-200">
+    <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg " src="img/INSTA (2).png" alt="" />
+    <div class="p-6 flex flex-col justify-start">
+      <h5 class="text-gray-900 text-xl font-medium mb-2">Contactar por: Instagram</h5>
+      <p class="text-gray-600 text-xs">Link directo para o DM</p>
+    </div>
+  </div>
+</div>
+
+<div class="flex justify-center mt-20" data-aos="zoom-in" data-aos-duration="600">
+  <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg mx-24 border-2 border-transparent hover:border-blue-400 transition duration-200">
+    <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="img/TWITTER LOGO.png" alt="" />
+    <div class="p-6 flex flex-col justify-start">
+      <h5 class="text-gray-900 text-xl font-medium mb-2">Contactar por:   Twitter</h5>
+      <p class="text-gray-600 text-xs">Link directo para perfil</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!--Footer-->
+<footer class="text-center lg:text-left bg-gray-100 text-white mt-20" style="background: linear-gradient(to bottom, white,black);">
+  <div class="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
+    <div class="mr-12 hidden lg:block">
+      <span class="text-black">Minhas Redes Sociais:</span>
+    </div>
+    <div class="flex justify-center text-black">
+      <a href="#!" class="mr-6">
+        <i class="fa-brands fa-instagram fa-2xl"></i>
+      </a>
+      <a href="#!" class="mr-6">
+        <i class="fa-brands fa-twitter fa-2xl"></i>
+      </a>
+      <a href="#!" class="mr-6">
+        <i class="fa-brands fa-facebook fa-2xl"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="mx-6 py-10 text-center md:text-left">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="">
+        <h6 class="uppercase font-semibold mb-4 flex items-center justify-center md:justify-start">
+          <img src="img/logo.png" alt="icone" class="w-1/3 h-1/3"/>
+          Miguel Mausse
+        </h6>
+        <p>
+          Here you can use rows and columns to organize your footer content. Lorem ipsum dolor
+          sit amet, consectetur adipisicing elit.
+        </p>
+      </div>
+
+      <div class="">
+        <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">Explorar</h6>
+        <p class="mb-4">
+          <a href="portofolio.html">Portfólio</a>
+        </p>
+        <p class="mb-4">
+          <a href="contact.html">Contacto</a>
+        </p>
+        <p class="mb-4">
+          <a href="index.html#services-available">Serviços</a>
+        </p>
+      </div>
+
+      <div class="">
+        <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">Contact</h6>
+        <p class="flex items-center justify-center md:justify-start mb-4">
+          <i class="fa-solid fa-house-chimney fa-xl mr-1"></i>
+          Maputo, MP-cidade 10012, MZ
+        </p>
+        <p class="flex items-center justify-center md:justify-start mb-4">
+          <i class="fa-solid fa-envelope fa-xl mr-1"></i>
+          info@examplo.com
+        </p>
+        <p class="flex items-center justify-center md:justify-start mb-4">
+          <i class="fa-solid fa-phone fa-xl mr-1"></i>
+          +258 84000000
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="text-center p-6 text-white bg-black">
+    <span>© 2022 Copyright:</span>
+    <a class="text-slate-200 font-semibold" href="https://twitter.com/melvin__nunes">Melvin Nunes</a>
+  </div>
+</footer>
+
+
+</body>
+</html>

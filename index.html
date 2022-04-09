@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Mausse - Página Inicial</title>
+    <link rel="stylesheet" href="dist/tailwind.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="animation/aos.css">
+    
+    <script src="animation/aos.js"></script>
+</head>
+<body>
+
+<!--Animation Starter-->
+<script>
+  AOS.init();
+</script>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg shadow-md py-6 lg:py-10 bg-white relative flex items-center w-full justify-between">
+    <div class="px-6 w-full flex flex-wrap items-center justify-between">
+        <div class="lg:pl-16">
+            <a href="index.html" ><img src="img/logo.png" alt="logo" class="w-18 h-8 lg:w-24 lg:h-8"></a>
+        </div>
+        <div class="flex items-center ml-72 md:hidden">
+          <button class="outline-none mobile-menu-button">
+            <svg class="w-6 h-6 text-gray-500" x-show="! showMenu" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" viewBox="0 00 24 24" stroke="currentColor">
+                <path d="m4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+      </div>
+      <div class="items-center">
+        <ul class="navbar-nav mr-auto md:flex md:flex-row hidden">
+          <li class="nav-item">
+            <a href="index.html" class="p-3 uppercase font-bold hover:text-blue-700 active:text-blue-600 focus:text-blue-600 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light">Home<i class="fa-solid fa-house-chimney pl-1"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="portofolio.html" class="p-3 uppercase font-bold hover:text-blue-700 active:text-blue-600 focus:text-blue-600 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light">Portófolio<i class="fa-solid fa-book-open pl-1"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="p-3 uppercase font-bold hover:text-blue-700 active:text-blue-600 focus:text-blue-600 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light">Contacto<i class="fa-solid fa-phone pl-1"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>    
+</nav>
+
+<!--Menu Responsivo-->
+<div class="hidden mobile-menu">
+  <ul class="pt-5 pb-5">
+    <li class="p-2 mx-5 my-3">
+      <a href="index.html" class=" uppercase font-bold hover:text-blue-900 text-blue-600 focus:text-blue-600 transition duration-300 ease-in-out">Home</a>
+    </li>
+    <li class="p-2 mx-5 my-3">
+      <a href="portofolio.html" class="  uppercase font-bold hover:text-blue-900 text-blue-600 focus:text-blue-600 transition duration-300 ease-in-out">Portófolio</a>
+    </li>
+    <li class="p-2 mx-5 my-3">
+      <a href="contact.html" class="  uppercase font-bold hover:text-blue-900 text-blue-600 focus:text-blue-600 transition duration-300 ease-in-out" >Contacto</a>
+    </li>
+  </ul>
+</div>
+
+<script>
+  const btn = document.querySelector("button.mobile-menu-button");
+  const menu = document.querySelector(".mobile-menu");
+
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+</script>
+
+<!-- Header da pagina -->
+<div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg" style="background-position: 50%; background-image: url('img/miguel.png'); height: 700px;">
+    <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed" style="background-color: rgba(0, 0, 0, 0.50)">
+      <div class="flex justify-center items-center h-full">
+        <div class="text-center px-10 md:px-12 " data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
+            <h1 class="text-blue-700 font-bold text-4xl md:text-7xl" >FOTOGRÁFO</h1>
+            <h1 class="text-white font-bold text-2xl md:text-5xl">Olá, sou o Miguel!</h1>
+            <div class="pt-8 md:pt-10 grid grid-flow-row p-5 md:p-0 md:flex">
+                <a href="contact.html"><button class="bg-blue-700 text-white border-2 border-blue-700 rounded md:py-5 py-8 md:px-14 px-28 md:mx-6 mx-6 my-5 md:my-0 focus:shadow-xl hover:border-blue-400 duration-300">Contactar<i class="fa-solid fa-phone-flip pl-1"></i></button></a>
+                <a href="portofolio.html"><button class="bg-transparent  text-white rounded border-2 md:py-5 py-8 md:px-16 px-24 md:mx-2 mx-6 my-5 md:my-0 hover:border-blue-700 hover:text-blue-400 hover:shadow-xl duration-300">Ver Portfólio<i class="fa-solid fa-briefcase pl-1"></i></button></a>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!--servicos-->
+<section id="services-available">
+    <div class="border-blue-500 border-b-4 w-64 mt-16 mx-auto text-slate-400" data-aos="zoom-in" data-aos-duration="700">
+        <h1 class="text-center font-bold text-4xl mb-3">SERVIÇOS</h1>
+    </div>
+    <div class="xl:grid grid-cols-3 pt-10">
+        <div class="flex justify-center my-8 xl:my-0 md:mx-1 mx-14" data-aos="fade-up" data-aos-duration="800">
+            <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg border-4 border-white hover:border-blue-500 duration-500">
+              <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="img/camera.png" alt="gridfoto"/>
+              <div class="p-6 flex flex-col justify-start">
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Fotográfia</h5>
+                <p class="text-gray-700 text-base mb-4">
+                    ipsum dolor sit amet, consectetur adipiscing elit. In et nunc ut eros tempor cursus.
+                </p>
+                <p class="text-gray-600 text-xs">Fotografo: Miguel Mausse</p>
+              </div>
+            </div>
+        </div>
+        <div class="flex justify-center my-8 xl:my-0 md:mx-1 mx-14" data-aos="fade-up" data-aos-duration="800">
+            <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg border-4 border-white hover:border-blue-500 duration-500">
+              <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="img/video.png" alt="" />
+              <div class="p-6 flex flex-col justify-start">
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Vídeo</h5>
+                <p class="text-gray-700 text-base mb-4">
+                    ipsum dolor sit amet, consectetur adipiscing elit. In et nunc ut eros tempor cursus.
+                </p>
+                <p class="text-gray-600 text-xs">Video Maker: Miguel Mausse</p>
+              </div>
+            </div>
+        </div>
+        <div class="flex justify-center my-8 xl:my-0 md:mx-1 mx-14" data-aos="fade-up" data-aos-duration="800">
+            <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg border-4 border-white hover:border-blue-500 duration-500">
+              <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="img/works/272111880_3029658924031181_7057487048746258590_n.jpg" alt="" />
+              <div class="p-6 flex flex-col justify-start">
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Edição de Fotos</h5>
+                <p class="text-gray-700 text-base mb-4">
+                    ipsum dolor sit amet, consectetur adipiscing elit. In et nunc ut eros tempor cursus.
+                </p>
+                <p class="text-gray-600 text-xs">Editor: Miguel Mausse</p>
+              </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!--Portfolio-->
+<section>
+    <div class="border-blue-500 border-b-4 w-64 mt-16 mx-auto text-slate-400" data-aos="zoom-in">
+        <h1 class="text-center font-bold text-4xl mb-3">PORTFÓLIO</h1>
+    </div>
+      <div class="lg:container  lg:py-2 lg:mx-auto pt-12 lg:pt-24 lg:px-32">
+        <div class="flex justify-center items-center mx-9 lg:mx-0 lg:flex lg:flex-wrap lg:-m-2">
+          <div class="lg:flex lg:flex-wrap w-1/2">
+            <div class="lg:w-1/2 p-1 md:p-2" data-aos="fade-up" data-aos-duration="600">
+              <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg border-transparent  border-4 hover:border-blue-700 transition duration-500 ease-in-out" src="img/works/mocas.jpg">
+            </div>
+            <div class="lg:w-1/2 p-1 md:p-2" data-aos="fade-up" data-aos-duration="600">
+              <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg border-transparent  border-4 hover:border-blue-700 transition duration-500 ease-in-out" src="img/works/fumo.jpg">
+            </div>
+            <div class="w-full p-1 md:p-2" data-aos="zoom-in" data-aos-duration="600">
+              <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg border-transparent  border-4 hover:border-blue-700 transition duration-500 ease-in-out" src="img/works/bratz.jpg">
+            </div>
+          </div>
+          <div class="lg:flex lg:flex-wrap w-1/2">
+            <div class="w-full p-1 md:p-2" data-aos="zoom-in" data-aos-duration="600">
+              <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg border-transparent  border-4 hover:border-blue-700 transition duration-500 ease-in-out" src="img/works/168455812_924998388350957_2351940663991428383_n.jpg">
+            </div>
+            <div class="lg:w-1/2 p-1 md:p-2" data-aos="fade-up" data-aos-duration="600">
+              <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg border-transparent  border-4 hover:border-blue-700 transition duration-500 ease-in-out" src="img/works/272266605_290046636492692_8328816706695687467_n.jpg">
+            </div>
+            <div class="lg:w-1/2 p-1 md:p-2" data-aos="fade-up" data-aos-duration="600">
+              <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg border-transparent  border-4 hover:border-blue-700 transition duration-500 ease-in-out" src="img/works/capturar.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center items-center mt-12 mb-24" data-aos="fade-up" data-aos-duration="700">
+        <!--botao para baixar ou confirmar-->
+        <button type="button"  class="px-14 py-7 mx-6 bg-blue-700 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-900 hover:shadow-lg focus:bg-blue-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Mais Fotos<i class="fa-solid fa-briefcase mx-2"></i></button>
+      </div>
+      <!-- Classe Modal -->
+      <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+          id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog relative w-auto pointer-events-none">
+            <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+              <div class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+                <h5 class="text-xl font-medium leading-normal text-gray-800" id="exampleModalLabel">NOTA!</h5>
+                <button type="button"
+                  class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                  data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body relative p-4">
+                Pode baixar um exemplar de alta qualidade para ver offline ou pode seguir para o Portfólio e ver todo conjunto online!
+              </div>
+              <div class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
+                <a href="portofolio.html"><button type="button" class="px-6 py-2.5 mx-2 bg-purple-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"data-bs-dismiss="modal">Ver Portfólio</button></a>
+                <a href="#"><button type="button" class="px-6 py-2.5 mx-2 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-outml-1">Baixar Exemplar</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+</section>
+
+
+<!--Marcações-->
+<section>
+  <div class="border-blue-500 border-b-4 w-64 mt-16 mx-auto text-slate-400" data-aos="zoom-in" data-aos-duration="400">
+    <h1 class="text-center font-bold text-4xl mb-3">Marcações</h1>
+  </div>
+  <div class="mt-9">
+    <h1 class="text-center font-bold text-4xl lg:text-8xl mb-3" data-aos="fade-up">+258 840000000</h1>
+    <div class="flex justify-center items-center mt-12 mb-24 animate-bounce">
+      <a href="contact.html"><button class="bg-blue-700  text-white rounded py-5 px-14 mx-6 hover:bg-blue-900 transition duration-500" data-aos="zoom-in">Contactar<i class="fa-solid fa-phone pl-1"></i></button></a>
+    </div>
+  </div>
+
+</section>
+
+<!--Footer-->
+<footer class="text-center lg:text-left bg-gray-100 text-white mt-14" style="background: linear-gradient(to bottom, white,black);">
+  <div class="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
+    <div class="mr-12 hidden lg:block">
+      <span class="text-black">Minhas Redes Sociais:</span>
+    </div>
+    <div class="flex justify-center text-black">
+      <a href="#!" class="mr-6">
+        <i class="fa-brands fa-instagram fa-2xl"></i>
+      </a>
+      <a href="#!" class="mr-6">
+        <i class="fa-brands fa-twitter fa-2xl"></i>
+      </a>
+      <a href="#!" class="mr-6">
+        <i class="fa-brands fa-facebook fa-2xl"></i>
+      </a>
+    </div>
+  </div>
+  <div class="mx-6 py-10 text-center md:text-left">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="">
+        <h6 class="uppercase font-semibold mb-4 flex items-center justify-center md:justify-start">
+          <img src="img/logo.png" alt="icone" class="w-1/3 h-1/3"/>
+          Miguel Mausse
+        </h6>
+        <p>
+          Here you can use rows and columns to organize your footer content. Lorem ipsum dolor
+          sit amet, consectetur adipisicing elit.
+        </p>
+      </div>
+
+      <div class="">
+        <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">Explorar</h6>
+        <p class="mb-4">
+          <a href="portofolio.html">Portfólio</a>
+        </p>
+        <p class="mb-4">
+          <a href="contact.html">Contacto</a>
+        </p>
+        <p class="mb-4">
+          <a href="#services-available">Serviços</a>
+        </p>
+      </div>
+      <div class="">
+        <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">Contact</h6>
+        <p class="flex items-center justify-center md:justify-start mb-4">
+          <i class="fa-solid fa-house-chimney fa-xl mr-1"></i>
+          Maputo, MP-cidade 10012, MZ
+        </p>
+        <p class="flex items-center justify-center md:justify-start mb-4">
+          <i class="fa-solid fa-envelope fa-xl mr-1"></i>
+          info@examplo.com
+        </p>
+        <p class="flex items-center justify-center md:justify-start mb-4">
+          <i class="fa-solid fa-phone fa-xl mr-1"></i>
+          +258 84000000
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="text-center p-6 text-white bg-black">
+    <span>© 2022 Copyright:</span>
+    <a class="text-slate-200 font-semibold" href="https://twitter.com/melvin__nunes">Melvin Nunes</a>
+  </div>
+</footer>
+
+</body>
+</html>
