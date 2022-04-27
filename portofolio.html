@@ -23,14 +23,15 @@
 </script> 
 
 <!-- Navbar -->
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg shadow-md py-6 lg:py-10 bg-white relative flex items-center w-full justify-between">
   <div class="px-6 w-full flex flex-wrap items-center justify-between">
       <div class="lg:pl-16">
           <a href="index.html" ><img src="img/logo.png" alt="logo" class="w-18 h-8 lg:w-24 lg:h-8"></a>
       </div>
-      <div class="ml-44 md:hidden">
-        <button class="outline-none mobile-menu-button">
-          <svg class="w-6 h-6 text-gray-500" x-show="! showMenu" fill="none" stroke-linecap="round"
+      <div class="flex justify-between items-center md:hidden">
+        <button class="mobile-menu-button">
+          <svg class="ml-40 w-6 h-6 text-gray-500" x-show="! showMenu" fill="none" stroke-linecap="round"
               stroke-linejoin="round" stroke-width="2" viewBox="0 00 24 24" stroke="currentColor">
               <path d="m4 6h16M4 12h16M4 18h16"></path>
           </svg>
@@ -67,21 +68,15 @@
 </ul>
 </div>
 
-<script>
-const btn = document.querySelector("button.mobile-menu-button");
-const menu = document.querySelector(".mobile-menu");
-
-  btn.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
-  });
-</script>
+<script src="index.js"></script>
 
 <!--Portofolio-->
-<div class="border-blue-500 border-b-4 w-96 mt-16 mx-auto" data-aos="zoom-in">
-    <h1 class="text-center uppercase text-white font-bold text-6xl pb-6">Portfólio</h1>
+<section>
+  <div class="border-blue-500 border-b-4 md:w-96 w-72 mt-16 mx-auto" data-aos="zoom-in">
+    <h1 class="text-center uppercase text-white font-bold md:text-6xl text-4xl pb-6">Portfólio</h1>
 </div>
 
-<div class="grid grid-cols-2 xl:grid-cols-4 justify-between mt-16 mx-2">
+<div class="grid md:grid-cols-2 xl:grid-cols-4 justify-between mt-16 mx-8">
     <div class="mx-5 my-5" data-aos="fade-up" data-aos-duration="600">
         <img src="img/works/272111880_3029658924031181_7057487048746258590_n.jpg" alt="" class="rounded-md">
     </div>
@@ -131,6 +126,8 @@ const menu = document.querySelector(".mobile-menu");
         <img src="img/works/103816681_270244184247622_6638594732898423016_n.jpg" alt="" class="rounded-md">
     </div>
 </div>
+</section>
+
 
 <!--Marcações-->
 <section>
